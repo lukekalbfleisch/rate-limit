@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  nginx:
+    container_name: nginx
+    hostname: nginx
+    build: nginx
+    ports:
+      - 80:80
+  app:
+    container_name: app
+    hostname: app
+    build: app
+    ports:
+      - 5000:5000
